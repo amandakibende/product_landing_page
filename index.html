@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Products</title>
   </head>
   <body>
@@ -11,58 +12,72 @@
       <!-- header page -->
 
       <header id="header">
-          <!--Logo-->
-        <div id="header-img"></div>
         <!--Navbar-->
         <nav id="nav-bar">
-          <ul id="nav-link">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Service</a></li>
-            <li><a href="/">Pricing</a></li>
-          </ul>
+            <!--Logo-->
+            <div id="header-img" class="nav-left">
+                <img src="/img/logo.png" alt="bisgrow_logo_icon">
+            </div>
+            <!--nav item-->
+            <div class="nav-right">
+                <ul id="nav-link">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+          
         </nav>
-        <div id="text-header">
-          <p>
-            *Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim
-            tempora facere rerum velit, quasi dolore omnis quam, ducimus quos
-            soluta ex pariatur recusandae amet repellat. Suscipit explicabo illo
-            harum!
-          </p>
-          <form id="form">
-              <label for="email">Email</label>
-              <input type="email" placeholder="Email" id="email" required>
-              <input id="submit"><a href=" https://www.freecodecamp.com/email-submit" target="_blank">SUBSCRIBE</a> </input>
-          </form>
-        </div>
-        <div id="woman-img"></div>
+         
       </header>
 
       <!-- Main page-->
 
       <!--Flex content-->
 
+        <div id="main-container">
+        <!--Headline-->
+            <div class="row-txt">
+                <h2>Grow your business Now!</h2>
+                <h5>Welcome to Bisgrow studio.</h5>
+                <p id="home">
+                Stay updated by subscribing to our newletter.
+                </p>
+            </div>
+          <!--Image-->
+            <div id="woman-img">
+                <img src="/img/woman-computer.png" alt="woman working on a laptop">
+            </div>
+            <!--Form-->
+            <form id="form">
+                <input type="email" placeholder="Email" id="email" required>
+                <button id="submit" type="button"><a href=" https://www.freecodecamp.com/email-submit"
+                        target="_blank">SUBSCRIBE</a> </button>
+            </form>
+        </div>
+           <!--Service section-->
      <div id="flex-container">
-         <h2>Service</h2>
+         <h2 id="service">Service</h2>
          <div id="flex">
              <img src="/img/database.png" alt="database_icon">
-             <h6 id="main-bold-txt">Database</h6>
+             <h3 id="main-bold-txt">Database</h3>
              <p>Nulla temporibus quos corporis incidunt eum ipsam officia ut quidem, at corrupti voluptatibus mollitia explicabo sequi dolorem dignissimos provident obcaecati quasi est!</p>
          </div>
         <div id="flex">
             <img src="/img/server.png" alt="server_icon">
-            <h6 id="main-bold-txt">Server</h6>
+            <h3 id="main-bold-txt">Server</h3>
             <p>Nulla temporibus quos corporis incidunt eum ipsam officia ut quidem, at corrupti voluptatibus mollitia explicabo
                 sequi dolorem dignissimos provident obcaecati quasi est!</p>
         </div>
         <div id="flex">
             <img src="/img/cloud.png" alt="cloud_icon">
-            <h6 id="main-bold-txt">Cloud</h6>
+            <h3 id="main-bold-txt">Cloud</h3>
             <p>Nulla temporibus quos corporis incidunt eum ipsam officia ut quidem, at corrupti voluptatibus mollitia explicabo
                 sequi dolorem dignissimos provident obcaecati quasi est!</p>
         </div>
         <div id="flex">
             <img src="/img/network.png" alt="network_icon">
-            <h6 id="main-bold-txt">Network</h6>
+            <h3 id="main-bold-txt">Network</h3>
             <p>Nulla temporibus quos corporis incidunt eum ipsam officia ut quidem, at corrupti voluptatibus mollitia explicabo
                 sequi dolorem dignissimos provident obcaecati quasi est!</p>
         </div>
@@ -80,9 +95,9 @@
      <!--Price section-->
 
      <div id="flex-price">
-         <h2>Pricing</h2>
+         <h2 id="pricing">Pricing</h2>
          <div id="price">
-             <h4>Free.</h4>
+             <h3>Free.</h3>
              <h5>for 6 months.</h5>
              <ul>
                  <li><span>&#10003</span>Downloads.</li>
@@ -91,11 +106,11 @@
              </ul>
          </div>
         <div id="price">
-            <h4>Join.</h4>
-            <h5>.</h5>
+            <h3>Join.</h3>
+            <h5><span>&#8364</span>18/mo.</h5>
             <ul>
-                <li><span>&#8364</span>Downloads.</li>
-                <li><span>&#8364</span>Contents.</li>
+                <li><span>&#10003</span>Downloads.</li>
+                <li><span>&#10003</span>Contents.</li>
                 <button>get it now</button>
             </ul>
         </div>
@@ -104,7 +119,7 @@
     </div>
     <!--Footer section-->
     <footer>
-        <small>coded by <a href="https://github.com/amandakibende/product_landing_page" target="_blank" rel="noopener noreferrer">Amanda</a></small>
+        
 <table>
     <tr>
         <th>Sitemap</th>
@@ -126,6 +141,8 @@
     
 </tr>
 </table>
+<small>coded by <a href="https://github.com/amandakibende/product_landing_page" target="_blank"
+        rel="noopener noreferrer">Amanda</a></small>
     </footer>
   </body>
 </html>
