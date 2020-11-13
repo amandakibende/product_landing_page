@@ -105,7 +105,7 @@ h2 {
 
 .price-grey {
   background-color: #f7f9fb;
-  margin: 50px;
+  padding-bottom: 50px;
 }
 
 #main-vid {
@@ -163,4 +163,8 @@ button:hover {
   border: 2px solid #525fe6;
   background-color: transparent;
   color: #525fe6;
+}
+
+footer {
+  margin: 25px;
 }
