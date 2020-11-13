@@ -25,31 +25,80 @@ header {
   border: 2px solid black;
 }
 
-#main-container {
-  border: 2px solid red;
-}
-
-#service-container {
-  border: 2px solid blue;
-}
-#flex-price {
-  border: 2px solid green;
-}
-
-#main-vid {
-  border: 2px solid orangered;
-}
-
 #logo {
   width: 80px;
 }
 
 #nav-bar {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
- .li-nav{
+.li-nav {
   display: inline;
   padding: 15px;
+}
+
+#main-container {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  height: 45em;
+}
+
+.row-txt,
+#woman-img {
+  width: 400px;
+  height: 300px;
+}
+
+.row-txt {
+  padding-top: 70px;
+  margin-right: 90px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+#service-container {
+  border: 2px solid blue;
+}
+
+#flex {
+  height: 300px;
+  width: 250px;
+  margin: 25px;
+  text-align: center;
+}
+
+#flex:hover {
+  background-color: #f0f2f4;
+}
+
+#flex-price {
+  border: 2px solid green;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#price {
+  width: 500px;
+  height: 200px;
+  margin: 30px;
+  background-color: cyan;
+  text-align: center;
+}
+
+#main-vid {
+  border: 2px solid orangered;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2em;
+  width: 50%;
 }
