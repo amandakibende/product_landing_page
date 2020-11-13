@@ -64,6 +64,9 @@ h2 {
 
 #service-container {
   border: 2px solid blue;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
 }
 
 #flex {
