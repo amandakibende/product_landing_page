@@ -25,7 +25,7 @@ body {
   flex: 1 100%;
 }
 
-#logo {
+#header-img {
   width: 80px;
 }
 
@@ -167,4 +167,26 @@ button:hover {
 
 footer {
   margin: 24px;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 920px) {
+  #landing-container {
+    width: 100%;
+    display: flex;
+  }
+
+  #main-container,
+  #service-container,
+  #flex-price {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #woman-img {
+    max-width: 100%;
+    height: auto;
+  }
 }
