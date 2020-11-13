@@ -139,7 +139,8 @@ input {
   padding: 13px 40px;
 }
 
-button {
+button,
+.btn-form {
   padding: 13px 30px;
   border: 2px solid #525fe6;
   background-color: #525fe6;
