@@ -20,9 +20,9 @@
           <!--nav item-->
           <div class="nav-right">
             <ul id="nav-link">
-              <li class="li-nav"><a href="#home">Home</a></li>
-              <li class="li-nav"><a href="#service">Service</a></li>
-              <li class="li-nav"><a href="#pricing">Pricing</a></li>
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#service" class="nav-link">Service</a></li>
+              <li><a href="#pricing" class="nav-link">Pricing</a></li>
             </ul>
           </div>
         </nav>
@@ -42,9 +42,18 @@
               Stay updated by subscribing to our newletter.
             </p>
             <!--Form-->
-            <form id="form">
-              <input type="email" placeholder="Email" id="email" required />
-              <input type="button" value="Subscribe" class="input-btn" />
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+              <input type="email" 
+              name="email"
+              placeholder="Email" 
+              id="email" 
+              required />
+              <input
+                type="submit"
+                id="submit"
+                value="Subscribe"
+                class="input-btn"
+              />
             </form>
           </div>
           <!--Image-->
@@ -168,5 +177,6 @@
         >
       </footer>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
