@@ -34,10 +34,14 @@ h2 {
   flex: 1 100%;
 }
 
-#header{
+#header {
   position: fixed;
   top: 0;
-  
+  overflow: hidden;
+  border: 2px solid transparent;
+  width: 100%;
+  height: 5em;
+  background-color: #f7f9fb;
 }
 
 #header-img {
@@ -45,28 +49,23 @@ h2 {
 }
 
 #nav-bar {
-  padding: 15px;
   display: flex;
-  margin-left: 5px;
-  margin-right: 5px;
-}
+  justify-content: space-between;
 
-.nav-left{
-justify-content: flex-start;
+  margin-left: 40px;
+  margin-right: 25px;
 }
 
 .nav-right {
-  display: inline;
-  flex-flow: row;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.nav-link{
-
-  padding: 15px;
-  line-height: 3;
+.nav-link {
+  text-decoration: none;
+  color: black;
+  line-height: 8em;
 }
 
 nav ul li a {
@@ -77,6 +76,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   height: 45em;
+  margin-top: 130px;
 }
 
 .row-txt,
@@ -173,7 +173,7 @@ button,
 }
 
 button:hover,
-.input-btn:hover{
+.input-btn:hover {
   border: 2px solid #525fe6;
   background-color: transparent;
   color: #525fe6;
@@ -183,24 +183,35 @@ footer {
   margin: 24px;
 }
 
-/*RESPONSIVE*/
-@media only screen and (max-width: 920px) {
+/*Responsive*/
+@media only screen and (max-width: 1024px) {
+  body {
+    width: auto;
+    
+  }
+
   #landing-container {
-    width: 100%;
+  
     display: flex;
+    width: auto;
   }
 
   #main-container,
   #service-container,
   #flex-price {
-    display: flex;
-    flex-flow: column;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    flex-flow: column;
+    width: 100%;
   }
 
   #woman-img {
     max-width: 100%;
     height: auto;
+  }
+
+  .price,
+  iframe {
+    width: 400px;
   }
 }
