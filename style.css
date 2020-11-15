@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kufam&family=PT+Serif+Caption&display=swap");
+
 a {
   text-decoration: none;
 }
@@ -63,7 +64,7 @@ justify-content: flex-start;
 }
 
 .nav-link{
- 
+
   padding: 15px;
   line-height: 3;
 }
@@ -170,19 +171,9 @@ button,
   cursor: pointer;
   transition: all 200ms ease-out;
 }
-button a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
-button a:hover {
-  text-decoration: none;
-  color: #525fe6;
-  font-weight: bold;
-}
-
-button:hover {
+button:hover,
+.input-btn:hover{
   border: 2px solid #525fe6;
   background-color: transparent;
   color: #525fe6;
